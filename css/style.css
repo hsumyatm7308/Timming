@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+
+:root{
+    --primary :  rgb(225, 159, 135);
+    --sec : rgb(100, 94, 211);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Cairo', sans-serif;
+}
+
+header{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(190deg,rgba(0,0,0,1), rgba(0,0,0,0.9) );
+}
+
+.navbar{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5));
+    border-bottom:1px solid #fff;
+    
+}
+
+.navcons{
+    position:absolute;
+    right: 10px;
+
+}
+
+.navbtn{
+    color: #fff;
+    background: none;
+    border: none;
+    padding: 7px 19px;
+    box-shadow: none;
+}
+.navbtn:hover{
+    color: #000;
+    background: #201e1ef4;
+}
+
+.navbar-nav .nav-item:hover{
+    background:#444;
+
+}
+
+@media(max-width:768px){
+    .contactnav{
+        display: none;
+    }
+}
+
+/* Start Banner  */
+
+.text{
+    display: block;
+    
+    position: absolute;
+    left: 200px;
+    bottom: 50vh;
+
+    animation-name: myanni;
+    animation-duration: 2s;
+    
+
+}
+
+#typing{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+
+@keyframes myanni{
+    from {
+      transform: translateX(-100px);
+      opacity: 0.1;
+    }
+
+    to {
+     transform: translateX(0);
+    }
+    
+ }
+
+ .butn{
+    position: absolute;
+    left: 200px;
+    bottom: 40vh;
+
+    animation-name: myanni;
+    animation-duration: 2s;
+ }
+
+.but{
+     border: 2px solid white;
+    background:rgb(111, 106, 210);
+    border-radius: 5px;
+
+    padding: 1px 20px;
+    
+}
+
+
+.bigclock{
+    width: 340px;
+    height: 340px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+   
+    position: absolute;
+    right: 200px;
+    bottom: 32vh;
+    
+    animation-name: clockanni;
+    animation-duration: 2s;
+
+}
+
+@keyframes clockanni{
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+
+    to {
+     transform: translateX(0);
+    }
+    
+ }
+
+.clock{
+    width: 300px;
+    height: 300px;   
+    border: 4px solid #fff;
+    border-radius: 50%;
+    /* box-shadow: 5px -5px 5px 5px rgb(58, 57, 57); */
+   
+    /* background-color: bisque; */
+
+    
+    
+    position: relative;
+
+    position: absolute;
+    right: 15px;
+    bottom: 2vh;
+
+}
+
+
+.sec{
+    width: 270px;
+    height: 270px;
+    /* background: blue;    */
+    position: absolute;
+    
+    left:  145px;
+    bottom: 110px;
+    
+}
+.s{
+    width: 3px;
+    height: 150px;
+    background: rgb(229, 217, 217);
+    border-radius: 0 0 20px 20px;
+
+    position: absolute;
+    bottom: 0;
+    
+    
+    transform-origin: 85% 75%;
+    z-index: 2;
+
+
+}
+
+.min{
+    width: 270px;
+    height: 270px;
+    /* background: red;    */
+    position: absolute;
+    left: 145px;
+    bottom: 145px;
+}
+
+.m{
+    width: 7px;
+    height: 100px;
+    background-color:var(--sec);
+    border-radius: 10px 10px 0 0;
+
+    position: absolute;
+    bottom: 0;
+
+    transform-origin: bottom;
+    z-index: 3;
+}
+
+.hr{
+    width: 270px;
+    height: 270px;
+    /* background: red;    */
+    position: absolute;
+    left: 145px;
+    bottom: 145px;
+}
+
+.h{
+    width: 9px;
+    height: 70px;
+    background-color:  var(--sec);
+    border-radius: 10px 10px 0 0;
+
+    position: absolute;
+    bottom: 0;
+
+    transform-origin: bottom;
+    z-index: 3;
+}
+
+.center{
+    width: 18px;
+    height: 18px;
+    background-color:#fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 140px;
+    bottom: 140px;
+    z-index: 30;
+}
+
+
+@media(max-width:768px){
+.text{
+    position: absolute;
+    top: 75vh;
+    left: 20px;
+    
+}
+  
+.bigclock{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.clock{
+  position: absolute;
+  top: 2vh;
+}
+
+.butn{
+    position: absolute;
+    left: 20px;
+    bottom: 6vh;
+ }
+
+}
+/* End Banner  */
+
+/* Start About Section  */
+.about{
+    height: 80vh;
+    background: linear-gradient(190deg,rgba(0,0,0,0.9), rgba(0,0,0,.8)  );
+    display: flex;
+    position: relative;
+}
+.pic{
+    width: 40%;
+   
+}
+.pic1{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.txt{
+    width: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt1{
+    width: 10%;
+}
+
+.txt2{
+    width: 150px;
+    height: 250px;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgb(95, 91, 91);   
+    /* background-color: rgb(100, 94, 211); */
+    /* letter-spacing: 2px; */
+    text-align: left;
+    
+    padding: 10px ;
+   
+}
+
+.txt3{
+   width: 80% ;
+    text-indent: 60px;
+    text-align: justify;
+    letter-spacing: 1px;
+
+}
+
+
+.butt{
+    border: 2px solid white;
+    background:var(--sec);
+    border-radius: 5px;
+
+    padding: 1px 10px;
+}
+
+
+
+
+@media(max-width:768px){
+    .about{
+        height: 80vh;
+        background: linear-gradient(190deg,rgba(0,0,0,0.9), rgba(0,0,0,.8)  );
+        display: flex;
+        position: relative;
+    }
+    .pic{
+        width: 20%;
+       
+    }
+    .pic1{
+        width: 200px;
+    }
+    
+    
+    
+    .txt{
+        width: 80%;
+    
+      
+    }
+    
+    .txt1{
+        width: 10%;
+    }
+    
+    .txt2{
+        width:    150px;
+        height: 250px;
+    }
+    
+    .txt3{
+       width: 80% ;
+    }
+}
+/* End About Section  */
+
+
+/* Start Display Section  */
+#display{
+    background: #454343e4;
+}
+
+.displaybar{
+    width: 30%;
+    height: 35px;
+    background: black;
+    display: flex;
+    margin-top: 5px;
+   
+    transform: translateX(-10px);
+   
+}
+
+.divsmbar{
+  position: relative;
+}
+
+.divsm2,.divsmbar4{
+    position: absolute;
+    right: 0;
+    
+}
+
+.divsmbar1,.divsmbar2,.divsmbar3,.divsmbar4{
+    width: 400px;
+    height: 3px;
+    background-color:var(--sec);
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+
+.divsmbar2,.divsmbar3{
+    width: 250px;
+    background: #000;
+    margin-top: 3px;
+}
+
+
+
+.displayitem{
+   width: 100px;
+   border-right:2px solid white ;
+   line-height: 35px;
+   text-align: center;
+   transform: skewX(10deg);
+
+}
+
+
+.activedis{
+    background-color:#444 ;
+}
+/* End Display Section  */
+
+
