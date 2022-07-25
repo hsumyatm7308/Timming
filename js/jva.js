@@ -9,13 +9,13 @@ const deg = 6;
 
 setInterval(()=>{
     let currentdate = new Date();
-    let hh = currentdate.getHours() * 30;
-    let mm = currentdate.getMinutes() * deg;
-    let ss = currentdate.getSeconds() * deg;
+    let h = currentdate.getHours() * 30;
+    let m = currentdate.getMinutes() * deg;
+    let s = currentdate.getSeconds() * deg;
 
-    hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
-    min.style.transform = `rotateZ(${(mm)}deg)`;
-    sec.style.transform = `rotateZ(${(ss)}deg)`;
+    hr.style.transform = `rotateZ(${(h)+(m/12)}deg)`;
+    min.style.transform = `rotateZ(${(m)}deg)`;
+    sec.style.transform = `rotateZ(${(s)}deg)`;
 });
 
 // end clock 
