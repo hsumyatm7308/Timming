@@ -426,6 +426,24 @@ header{
 .activedis{
     background-color:#444 ;
 }
+
+@media(max-width:768px){
+    .displaybar{
+        width: 85%;      
+    }
+
+}
+
+.filter{
+    width: 200px;
+}
 /* End Display Section  */
+
+/* Start Qualative Section  */
+
+.card{
+    width: 200px;
+}
+/* End Qualative Section  */
 
 
