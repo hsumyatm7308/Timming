@@ -1,526 +1,340 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Timmin</title>
-        <!-- fontawesome  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <!-- lightbox2  -->
-        <link rel="stylesheet" href="./libs/lightbox2/css/lightbox.min.css">
-        <!-- bosstrap css1 js1  -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <!-- custom css  -->
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
+<head>
+ <title>Mention Hospital</title>
+<!-- fav icon -->
+ <link href="./assets/img/fav/favicon2.png" rel="icon" type="image/png" sizes="16x16" />
+<!-- bootstrap css1 js -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- fontawesome 5.15.4 js1 -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- jquery css1 js1 -->
+ <link href="./assets/libs/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<!-- custom css -->
+ <link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+ <!-- Start Header Section -->
+ <header>
+
+  <!-- Start Header Intro Section -->
+  <section class="headerintros visiblelgs">
+   <div class="container infos">
+    <table>
+     <tr>
+      <td><i class="fas fa-clock"></i></td>
+      <td>
+       Mon - Sat 8:00 - 18:00 <br/>
+       Sunday CLOSED
+      </td>
+     </tr>
+    </table>
+    <table>
+     <tr>
+      <td><i class="fas fa-envelope"></i></td>
+      <td><a href="mailto:admin@mentionhospital.com" class="nav-link"></a>admin@mentionhospital.com</td>
+     </tr>
+    </table>
+    <table>
+     <tr>
+      <td><i class="fas fa-bus"></i></td>
+      <td>Van facility available for pick and drop</td>
+     </tr>
+    </table>
+   </div>
+  </section>
+  <!-- End Header Intro Section -->
+  <!-- Start Nav Bar Section -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+   <div class="container">
+    <a href="index.html" class="navbar-brand fw-bold">Mention Hospital</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="mynav" class="navbar-collapse collapse">
+     <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+      <li class="nav-item"><a href="#department" class="nav-link">Department</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Our TEam</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Premises</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <!-- End Nav Bar Section -->
+  <!-- Start Banner Section -->
+  <section>
+   <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <ol class="carousel-indicators">
+     <li class="active" data-bs-target="#mycarousel" data-bs-slide-to="0"></li>
+     <li data-bs-target="#mycarousel" data-bs-slide-to="1"></li>
+     <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+     <div class="carousel-item active banners1">
+      <div class="container">
         
-        <!-- Start Header Section  -->
-        <header class="">
-            <!-- start navigation  -->
-            <nav class="navbar navbar-expand-lg fixed-top" >
-            
-             
-                <a href="" class="navbar-brand">  
-                    <img src="./img/logo/logo-removebg-preview.png" alt="" width="70px">
-                    <span class="text-uppercase text-warning  fw-bold">Timming </span>
-                </a>
-                </div>
+       <div class="carousel-caption d-none d-sm-block mb-5">
+        <h1 class="text-uppercase display-4">Providing Health Care Solution</h1>
+        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <a href="#" class="btn btn-blues btn-lg">Our Service</a>
+       </div>
+      </div>
+     </div>
+     <div class="carousel-item banners2 ">
+      <div class="container">
+       <div class="carousel-caption d-none d-sm-block mb-5">
+        <h1 class="text-uppercase display-4">Providing Total Lab Solution</h1>
+        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
-                <button class="btn navbar-toggler navbtn" data-bs-target="#nav"  data-bs-toggle="collapse">
-                    <i class="fa-solid fa-bars text-light"></i>                 
-                </button>
+        <a href="#" class="btn btn-blues btn-lg">Our Service</a>
+       </div>
+      </div>
+     </div>
+     <div class="carousel-item banners3 ">
+      <div class="container">
+       <div class="carousel-caption d-none d-sm-block mb-5">
+        <h1 class="text-uppercase display-4">Your Health Life is Our Pirority</h1>
+        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <a href="#" class="btn btn-blues btn-lg">Our Service</a>
+       </div>
+      </div>
+     </div>
+    </div>
 
-            
-                  
-                </div>
+    <a href="#mycarousel" class="carousel-control-prev" data-bs-slide-to="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
 
-                <div id="nav" class="navbar-collapse collapse ">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#" class="nav-link ms-3 text-light text-uppercase menus">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link ms-3 text-light text-uppercase menus" >About</a></li>
-                    <li class="nav-item"><a href="#display" class="nav-link ms-3 text-light text-uppercase menus" >Display</a></li>
-                    <li class="nav-item"><a href="#quality" class="nav-link ms-3 text-light text-uppercase menus">quality</a></li>
-                    <li class="nav-item"><a href="#available"  class="nav-link ms-3 text-light text-uppercase menus">Available items</a></li>
-                    <li class="nav-item"><a href="#service" class="nav-link ms-3 text-light text-uppercase menus">Service</a></li>
-                    <li class="nav-item"><a href="#customer" class="nav-link ms-3 text-light text-uppercase menus">Customer</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link ms-3 text-light text-uppercase menus">Contact</a></li>
-                </ul>
-                
-                <ul  class="navbar-nav navcons contactnav " >
-                    <li class="nav-item"><a href="#" class="mx-2 text-light"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li class="nav-item"><a href="#" class="mx-2 text-light"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="nav-item"><a href="#" class="mx-2 text-light"><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
+    <a href="#mycarousel" class="carousel-control-next" data-bs-slide-to="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+   </div>
+  </section>
+  <!-- End Banner Section -->
+
+ </header>
+ <!-- End Header Section -->
+
+ <!-- Start Feature Section  -->
+ <section id="features" class="text-center pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <h4>Our Features</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             </div>
-              
-            </nav>
-            <!-- end navitaion  -->
-             
-            <!-- start banner  -->
-            <div class="">
-            <div class="text ">
-               <p class="text-uppercase text-light lead">Hello! It's  <span id="type" class="text-warning display-5" ></span></p>
-               <small class="text-light" id="typing"></small>
-            </div>
-
-            <div class="text-center butn">
-                <button type="button" class="btn text-light small but me-3">Log in</button> 
-             <a href="#">   <button type="button" class="btn text-light small but">More</button></a>
-            </div>
-
-                <div class="bigclock ">
-            
-                <div class="clock">
-                   
-                    <div class="hr">
-                        <div class="h" id="hr"></div>
-                    </div>
-                    <div class="min">
-                        <div class="m" id="min"></div>
-                    </div>
-                    <div class="sec">
-                        <div class="s" id="sec"></div>
-                    </div>
-                    <div class="center"></div>
-                </div>
-
-             </div>
-                </div>
-             
-             
-            <!-- end banner  -->
-        </header>
-        <!-- End Header Section  -->
-
-        <!-- Start About Section  -->
-         <section id="about">
-                <div class="about text-light">
-                     <div class="pic ">
-                        <img src="./img/profile/pic1-removebg-preview.png" alt="" class="pic1">
-                     </div>
-
-                     <div class="txt">
-                        <h3 class="display-5 txt1">Who Are We!</h3>
-
-                      <div class="txt2 mx-4 "> <span class="m-2">Lorem ipsum dolor sit amet  adipisicing sit amet elit Sapiente </span> </div>  
-                      
-                      <div class="txt3 me-2">
-                         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente fuga ab reiciendis minima cupiditate laborum eligendi impedit incidunt sit? Debitis omnis cupiditate quibusdam quis saepe voluptas esse! Voluptates, deleniti debitis?
-                             Perspiciatis, illum.</p>
-                        
-                            <button type="button" class=" btn butt">Read More</button>
-                        </div> 
-
-                     </div>
-                </div>
-         </section>
-        <!-- End About Section  -->
-
-        <!-- Start Display Section -->
-        <section id="display">
-            <div class="dp">
-              
-            <div class="displaybar">         
-                    <div class="bg-danger text-danger px-3 displayitem" aria-disabled="true">hdgh</div>             
-                    <div class="displayitem activedis" data-filter="all"><a href="#all" class="nav-link text-light" >All</a></div>  
-                    <div class="displayitem " data-filter="men"><a href="#men" class="nav-link text-light" >Men</a></div>
-                    <div class="displayitem" data-filter="women"><a href="#women" class="nav-link text-light" >Women</a></div>
-                    <div class="displayitem " data-filter="couple" ><a href="#couple" class="nav-link text-light" >Couple</a></div>          
-                        
-            </div>
-
-            <div class="divsmbar">
-                   <div class="divsm1">
-                   <div class="divsmbar1"></div> 
-                   <div class="divsmbar2"></div> 
-            </div>
-
-            <div class="divsm2">
-                  <div class="divsmbar3"></div>
-                  <div class="divsmbar4"></div>
-           </div>
-           </div>
         </div>
-           <!-- start watch  -->
-           <div class="container mt-4 text-center d-flex flex-wrap justify-content-center text-light">
+        <!-- end <title> </title> -->
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="iconboxes">
+                    <div class="icons"><i class="fas fa-ambulance fa-2x"></i></div>
+                    <h4>Emergency Care</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ab a assumenda sequi architecto mollitia dolores dignissimos dicta amet. Dolor eaque libero hic obcaecati accusamus, nemo tempora dicta in laudantium?</p>
 
-            <div class="mx-3 filter men">
-                <a href="./img/display/men/clock1.jpg" data-lightbox="display" data-title="clock1">
-                <img src="./img/display/men/clock1.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true">
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter men "  >
-                <a href="./img/display/men/clock2.jpg" data-lightbox="display" data-title="clock2">
-                <img src="./img/display/men/clock2.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter men">
-                <a href="./img/display/men/clock3.jpg"  data-lightbox="display" data-title="clock3">
-                <img src="./img/display/men/clock3.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true">
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter men">
-                <a href="./img/display/men/clock4.jpg" data-lightbox="display" data-title="clock4">
-                <img src="./img/display/men/clock4.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter men">
-                <a href="./img/display/men/clock5.jpg" data-lightbox="display" data-title="clock5">
-                <img src="./img/display/men/clock5.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter men">
-                <a href="./img/display/men/clock6.jpg" data-lightbox="display" data-title="clock6">
-                <img src="./img/display/men/clock6.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter men">
-                <a href="./img/display/men/clock7.jpg" data-lightbox="display" data-title="clock7">
-                <img src="./img/display/men/clock7.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter men">
-                <a href="./img/display/men/clock8.jpg" data-lightbox="display" data-title="clock8">
-                <img src="./img/display/men/clock8.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <!-- women  -->
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch1.jpg" data-lightbox="display" data-title="watch1">
-                <img src="./img/display/women/watch1.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch2.jpg" data-lightbox="display" data-title="watch2">
-                <img src="./img/display/women/watch2.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch3.jpg" data-lightbox="display" data-title="watch3">
-                <img src="./img/display/women/watch3.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                       <span>$300</span>
-            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch4.jpg" data-lightbox="display" data-title="watch4">
-                <img src="./img/display/women/watch4.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>
-            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch5.jpg" data-lightbox="display" data-title="watch5">
-                <img src="./img/display/women/watch5.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch6.jpg" data-lightbox="display" data-title="watch6">
-                <img src="./img/display/women/watch6.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch7.jpg" data-lightbox="display" data-title="watch7">
-                <img src="./img/display/women/watch7.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch8.jpg" data-lightbox="display" data-title="watch8">
-                <img src="./img/display/women/watch8.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-
-        
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch1.jpg"  data-lightbox="display" data-title="watch1">
-                <img src="./img/display/women/watch1.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true">
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch1.jpg" data-lightbox="display" data-title="watch1">
-                <img src="./img/display/women/watch1.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch2.jpg" data-lightbox="display" data-title="watch2">
-                <img src="./img/display/women/watch2.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch3.jpg" data-lightbox="display" data-title="watch3">
-                <img src="./img/display/women/watch3.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch4.jpg" data-lightbox="display" data-title="watch4">
-                <img src="./img/display/women/watch4.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch5.jpg" data-lightbox="display" data-title="watch5">
-                <img src="./img/display/women/watch5.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch6.jpg" data-lightbox="display" data-title="watch6">
-                <img src="./img/display/women/watch6.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch7.jpg" data-lightbox="display" data-title="watch7">
-                <img src="./img/display/women/watch7.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch8.jpg" data-lightbox="display" data-title="watch8">
-                <img src="./img/display/women/watch8.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                </a>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                <span>$300</span>            </div>
-
-
-        
-            <div class="mx-3 filter women">
-                <a href="./img/display/women/watch1.jpg" data-lightbox="display" data-title="watch1">
-                <img src="./img/display/women/watch1.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-            </a>
-                
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-            <span>$300</span>              
-            </div>
-
-            <!-- couple  -->
-            
-            <div class="mx-3 filter couple">
-                <a href="./img/display/couple/cp2.jpg" data-lightbox="display" data-title="cp2">
-                <img src="./img/display/couple/cp2.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >                
-             </a>
-             <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-             <span>$300</span>
-            </div>
- 
-                <div class="mx-3 filter couple">
-                    <a href="./img/display/couple/cp3.jpg" data-lightbox="display" data-title="cp3">
-                    <img src="./img/display/couple/cp3.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                    </a>
-                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                    <span>$300</span>
                 </div>
 
-                    <div class="mx-3 filter couple">
-                        <a href="./img/display/couple/cp4.jpg" data-lightbox="display" data-title="cp4">
-                        <img src="./img/display/couple/cp4.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                        </a>
-                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                       <span>$300</span>
-                    </div>
-
-                    <div class="mx-3 filter couple">
-                        <a href="./img/display/couple/cp5.jpg" data-lightbox="display" data-title="cp5">
-                        <img src="./img/display/couple/cp5.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                        </a>
-                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                       <span>$300</span>
-                    </div>
-
-                    <div class="mx-3 filter couple">
-                        <a href="./img/display/couple/cp6.jpg" data-lightbox="display" data-title="cp6">
-                        <img src="./img/display/couple/cp6.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                        </a>
-                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                        <span>$300</span>                    </div>
-
-                    <div class="mx-3 filter couple">
-                        <a href="./img/display/couple/cp7.jpg" data-lightbox="display" data-title="cp7">
-                        <img src="./img/display/couple/cp7.jpg" alt="" width="200px" data-tilt data-tilt-reverse="true" >
-                        </a>
-                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                        <span>$300</span>                    </div>
-
-           </div>
-           <!-- end watch  -->
+               
             </div>
-        </section>
 
-        <!-- Emd Display Section -->
+            <div class="col-md-4 mb-3">
+                <div class="iconboxes">
+                    <div class="icons"><i class="fas fa-stethoscope fa-2x"></i></div>
+                    <h4>Qualified Doctors</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ab a assumenda sequi architecto mollitia dolores dignissimos dicta amet. Dolor eaque libero hic obcaecati accusamus, nemo tempora dicta in laudantium?</p>
+                    
+                </div>
+            </div>
 
-        <!-- Start Qualtive Section  -->
-        <section id="quality" class="container">
-
-       <div class="bg-info">   <h1 class="col-12 text-center text-uppercase mt-3 mb-5">Our quality</h1>   </div>  
-
-            <div class="row ms-3">
-            <div class="card col-lg-6 col-md-4 col-sm-12 text-center mb-3 me-2" data-tilt data-tilt-axis="x">
-
-                <div class="card-body">
-                    <img src="./img/qualaty/waterproof-icon-water-resistant-logo-vector-32957875-removebg-preview (1).png" alt="" width="80px">
-                    <div class="card-title text-center">
-                         <h3>Water Proof</h3>                       
+                <div class="col-md-4 mb-3">
+                    <div class="iconboxes">
+                        <div class="icons"><i class="fas fa-hospital-user fa-2x"></i></div>
+                        <h4>24/7 Hours Service</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ab a assumenda sequi architecto mollitia dolores dignissimos dicta amet. Dolor eaque libero hic obcaecati accusamus, nemo tempora dicta in laudantium?</p>
+                        
                     </div>
                 </div>
 
-                <div class="card-subtitle">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse et aut quo ipsum magnam sapiente vitae provident numquam, ratione reiciendis nisi ullam corrupti autem voluptatibus ut quam eum id dolores.      
-                </div>
+        </div>
+    </div>
+ </section>
+ <!-- End Feature Section  -->
 
+ <!-- Start Info Section  -->
+ <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 align-self-center infotext fromlefts">
+                <h4 class="text-uppercase">We ensure medical care for you with best quality service</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, eius doloribus aut quam corrupti reiciendis fugit harum impedit eligendi necessitatibus sequi doloremque nobis a non incidunt, neque sed! Facilis, accusamus.</p>
+                <a href="" class="btn btn-blues btn-lg">Make Appointment</a>
+            </div>
+            <div class="col-md-6 text-center text-lg-end infopic fromrights">
+                <img src="./assets/img/users/faqs.png" alt="faqs" width="300px">
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+ <!-- End Info Section  -->
+
+ <!-- Start ADV SEction  -->
+ <section class="advs py-5">
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="display-6 text-uppercase">Need Top Health Care</h3>
+                <p class="lead">The Quality Healthcare in your city</p>
+                <h3><a href="tel:+959" class="nav-link">Call Now(95 (95) 98708070978</a></h3>
             </div>
 
+            <div class="col-md-6 text-center mt-3">
+                <a href=""><i class="fas fa-play fa-3x"></i></a>
+               <h1>See What Do We Do</h1>
+            </div>
+        </div>
 
-            <div class="card col-lg-6 col-md-4 col-sm-12 text-center mb-3 me-2" data-tilt data-tilt-axis="x">
+    </div>
+ </section>
+ <!-- End ADV Section  -->
 
-                <div class="card-body">
-                   <img src="./img/qualaty/righttime.png" alt="" width="100px">
-                    <div class="card-title text-center">
-                         <h3>Right Time</h3>                       
+
+ <!-- Start Department Section  -->
+ <section id="department" class="py-5">
+    <div class="container">
+          <!-- start title  -->
+          <div class="row">
+            <div class="col-md-12 text-center">
+                <h4>Our Departments</h4>
+                <p>There are many varations of passages of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, aperiam expedita</p>
+            </div>
+          </div>
+          <!-- end title  -->
+
+          <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="deptboxes">
+                    <div>
+                        <img src="./assets/img/gallery/dept-03.jpg" alt="">
                     </div>
+                    <div class="contents">
+                        <h3 class="text-uppercase">Orthopdics</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis doloremque praesentium del</p>  
+                    <a href="#"><i class="fas fa-phone"></i>content</a>
+                    <a href="#"><i class="fas fa-heart"></i>support</a>
                 </div>
 
-                <div class="card-subtitle">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse et aut quo ipsum magnam sapiente vitae provident numquam, ratione reiciendis nisi ullam corrupti autem voluptatibus ut quam eum id dolores.      
                 </div>
-
             </div>
 
-
-            <div class="card col-lg-6 col-md-4 col-sm-12 text-center mb-3 me-2" data-tilt data-tilt-axis="x">
-
-                <div class="card-body">
-                   <img src="./img/qualaty/watchstrap.png" alt="" width="100px">
-                    <div class="card-title text-center">
-                         <h3>Watch Strap</h3>                       
+            <div class="col-md-4 mb-3">
+                <div class="deptboxes">
+                    <div>
+                        <img src="./assets/img/gallery/dept-06.jpg" alt="">
                     </div>
+                    <div class="contents">
+                        <h3 class="text-uppercase">Orthopdics</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis doloremque praesentium del</p>  
+                    <a href="#"><i class="fas fa-phone"></i>content</a>
+                    <a href="#"><i class="fas fa-heart"></i>support</a>
                 </div>
 
-                <div class="card-subtitle">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse et aut quo ipsum magnam sapiente vitae provident numquam, ratione reiciendis nisi ullam corrupti autem voluptatibus ut quam eum id dolores.      
                 </div>
-
             </div>
 
-            <div class="card col-lg-6 col-md-4 col-sm-12 text-center mb-3 me-2" data-tilt data-tilt-axis="x">
-
-                <div class="card-body">
-                   <img src="./img/qualaty/righttime.png" alt="" width="100px">
-                    <div class="card-title text-center">
-                         <h3>Right Time</h3>                       
+            <div class="col-md-4 mb-3">
+                <div class="deptboxes">
+                    <div>
+                        <img src="./assets/img/gallery/dept-04.jpg" alt="">
                     </div>
+                    <div class="contents">
+                        <h3 class="text-uppercase">Orthopdics</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis doloremque praesentium del</p>  
+                    <a href="#"><i class="fas fa-phone">content</i></a>
+                    <a href="#"><i class="fas fa-heart">support</i></a>
                 </div>
 
-                <div class="card-subtitle">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse et aut quo ipsum magnam sapiente vitae provident numquam, ratione reiciendis nisi ullam corrupti autem voluptatibus ut quam eum id dolores.      
                 </div>
-
             </div>
 
-            <div class="card col-lg-6 col-md-4 col-sm-12 text-center mb-3 me-2" data-tilt data-tilt-axis="x">
-
-                <div class="card-body">
-                   <img src="./img/qualaty/watchstrap.png" alt="" width="100px">
-                    <div class="card-title text-center">
-                         <h3>Watch Strap</h3>                       
+            <div class="col-md-4 mb-3">
+                <div class="deptboxes">
+                    <div>
+                        <img src="./assets/img/gallery/dept-05.jpg" alt="">
                     </div>
+                    <div class="contents">
+                        <h3 class="text-uppercase">Orthopdics</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis doloremque praesentium del</p>  
+                    <a href="#"><i class="fas fa-phone">content</i></a>
+                    <a href="#"><i class="fas fa-heart">support</i></a>
                 </div>
 
-                <div class="card-subtitle">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse et aut quo ipsum magnam sapiente vitae provident numquam, ratione reiciendis nisi ullam corrupti autem voluptatibus ut quam eum id dolores.      
                 </div>
-
             </div>
 
-           
-
-
-            <div class="card col-lg-6 col-md-4 col-sm-12 text-center mb-3 me-2" data-tilt data-tilt-axis="x">
-
-                <div class="card-body">
-                    <img src="./img/qualaty/waterproof-icon-water-resistant-logo-vector-32957875-removebg-preview (1).png" alt="" width="80px"  >
-                    <div class="card-title text-center">
-                         <h3>Water Proof</h3>                       
+            <div class="col-md-4 mb-3">
+                <div class="deptboxes">
+                    <div>
+                        <img src="./assets/img/gallery/dept-01.jpg" alt="">
                     </div>
+                    <div class="contents">
+                        <h3 class="text-uppercase">Orthopdics</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis doloremque praesentium del</p>  
+                    <a href="#"><i class="fas fa-phone">content</i></a>
+                    <a href="#"><i class="fas fa-heart">support</i></a>
                 </div>
 
-                <div class="card-subtitle">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse et aut quo ipsum magnam sapiente vitae provident numquam, ratione reiciendis nisi ullam corrupti autem voluptatibus ut quam eum id dolores.      
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="deptboxes">
+                    <div>
+                        <img src="./assets/img/gallery/dept-02.jpg" alt="">
+                    </div>
+                    <div class="contents">
+                        <h3 class="text-uppercase">Orthopdics</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis doloremque praesentium del</p>  
+                    <a href="#"><i class="fas fa-phone">content</i></a>
+                    <a href="#"><i class="fas fa-heart">support</i></a>
                 </div>
 
+                </div>
             </div>
 
-            </div>
-        </section>
-        <!-- End Qualitve Section  -->
+          
+          </div>
+    </div>
 
-        <!-- Start Available Section  -->
-        <section id="available">
-            <div>
+ </section>
 
-            </div>
-        </section>
-        <!-- End Available Section  -->
-
-
-     
+ <!-- end Department </Section> -->
 
 
 
-        <!-- boostrap css1 js1  -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-        <!-- auto type  -->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <!-- Jquery  -->
-        <script src="./libs/jquery-3.6.0.min.js"></script>
-        <!-- tilt.js  -->
-        <script src="./libs/tilt.jquery.min.js"></script>
-        <!-- lightbox2  -->
-        <script src="./libs/lightbox2/js/lightbox.min.js"></script>
-        <script src="./js/jva.js"></script>
-         
-    </body>
+<!-- bootstrap css1 js1 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- jquery js1 -->
+    <script src="./assets/libs/jquery-3.6.0.min.js" type="text/javascript"></script>
+<!-- jqueryui css1 js1 -->
+    <script src="./assets/libs/jquery-ui.min.js" type="text/javascript"></script>
+<!-- custom js -->
+ <script src="./js/app.js" type="text/javascript"></script>
+
+</body>
 </html>
 
+<!-- d-sm-block is no appear on sm size  -->
