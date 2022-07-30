@@ -22,6 +22,8 @@ setInterval(()=>{
 
 
 
+
+
 //  start auto type 
 
 var typing = new Typed('#type', {
@@ -78,5 +80,49 @@ $('.displayitem').click(function(e){
 
 })
 // end display 
+
+
+
+// start modal box
+$("#pw").click(function(){
+    var hideshowpw = $('#password').attr("type");
+    if(hideshowpw === "password"){
+       hideshowpw =  "text";
+        $("#pw").html(`<i class="fa-solid fa-unlock"></i> hide password`).css("color","#fff");
+    }else{      
+        hideshowpw = "password";
+        $("#pw").html(`<i class="fa-solid fa-lock"></i> show password`);
+    }
+    $("#password").attr("type",hideshowpw);
+   });
+
+//    for comfirm password 
+$("#compw").click(function(){
+    var comfirmpassword = $("#compassword").attr("type");
+    if(comfirmpassword === "password"){
+        comfirmpassword = "text";
+        $("#compw").html(`<i class="fa-solid fa-unlock"></i> hide password`).css("color","#fff");
+    }else{
+        comfirmpassword = "password";
+        $("#compw").html(`<i class="fa-solid fa-lock"></i> show password`);
+    }
+    $("#compassword").attr("type",comfirmpassword);     
+});
+
+// password match 
+$("#compassword").on("keyup",function(){
+    let password = $('#password').val();
+let compassword = $("#compassword").val();
+    if(password != compassword){
+        $('#textspace1').html("password does not match").css("color","#fff");
+    }else{
+        $('#textspace1').html("password match").css("color","#fff");
+    }
+})
+ 
+// end modal box 
+
+
+
 
 
